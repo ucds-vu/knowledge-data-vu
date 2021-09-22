@@ -6,9 +6,9 @@
 
 ex:Netherlands a ex:Country .
 ex:Belgium a ex:Country .
-ex:Netherlands ex:has_Name "The Netherlands" .
+ex:Netherlands ex:hasName "The Netherlands" .
 ex:Netherlands ex:neighbours ex:Belgium .
-ex:Netherlands ex:has_Capital ex:Amsterdam .
+ex:Netherlands ex:hasCapital ex:Amsterdam .
 ex:Amsterdam a ex:Capital .
 ex:Amsterdam ex:closeBy ex:Germany .
 ex:Germany a ex:EuropeanCountry .
