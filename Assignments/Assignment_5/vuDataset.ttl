@@ -1,0 +1,9 @@
+<http://example.org/vu/stefan> <http://example.org/vu/teaches> <http://example.org/vu/courseA>.
+<http://example.org/vu/stefan> <http://example.org/vu/teaches> <http://example.org/vu/courseB>.
+<http://example.org/vu/stefan> <http://example.org/vu/teaches> <http://example.org/vu/courseC>.
+<http://example.org/vu/stefan> <http://example.org/vu/teaches> <http://example.org/vu/courseD>.
+<http://example.org/vu/stefan> <http://example.org/vu/teaches> <http://example.org/vu/courseE>.
+<http://example.org/vu/frank> <http://example.org/vu/teaches> <http://example.org/vu/courseA>.
+<http://example.org/vu/frank> <http://example.org/vu/teaches> <http://example.org/vu/courseB>.
+<http://example.org/vu/frank> <http://example.org/vu/teaches> <http://example.org/vu/courseC>.
+<http://example.org/vu/joe> <http://example.org/vu/teaches> <http://example.org/vu/courseA>.
