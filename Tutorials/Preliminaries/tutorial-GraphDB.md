@@ -56,7 +56,7 @@ Try the following steps to query DBpedia from GraphDB:
     PREFIX dbo: <http://dbpedia.org/ontology/>
     SELECT DISTINCT ?language
     WHERE {
-      SERVICE <http://dbpedia.org/sparql> {
+      SERVICE <https://dbpedia.org/sparql> {
         ?somePlace dbo:officialLanguage ?language .
       }
     } LIMIT 10
