@@ -7,42 +7,40 @@ In order to do the practical assignments of this course, you need to install som
 
 A good text editor is essential for coding, writing queries and reading files. Since we will be editing in this course RDF files and writing SPARQL queries, it helps if this text editor also supports syntax highlighting for **Turtle** and **SPARQL**.
 
-Example of good text editors: [Atom](http://atom.io) or [Sublime](http://sublimetext.com).
+Example of good text editors: [Notepad++](https://notepad-plus-plus.org), [Sublime](https://sublimetext.com), or [ViM](https://www.vim.org).
 
 
 ## 2. Python
 *(needed from Week 1)*
 
-A working version of Python is needed for this course, preferably somewhat close to version 3.7 for your platform of choice.
+A working version of Python is needed for this course, preferably somewhat close to version 3.10 for your platform of choice.
 
 ### - *How to install Python?*
 
 We provide some installation instructions for the three major operating systems: Linux, OS X, and Windows. This short tutorial is copied from the [Python-Installation-Tutorial](https://github.com/purcellconsult/Python-Installation-Tutorial) by [purcellconsult](https://github.com/purcellconsult).
 
 
-#### 2.1. Install Python on Linux (Ubuntu 18.04)
+#### 2.1. Install Python on Linux (Ubuntu)
 
 To see if Python is installed on your machine open up the terminal and type in the following:
 
     python
 
-You can fire-up the terminal by using the keyboard shortcut: *ctr + alt + t*.
-
 The output should look something like the following:
 
-    Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
+    Python X.XX |Anaconda, Inc.| (default, ...)
     [GCC 7.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
 
 Look at this line of output:
 
-    Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
+    Python X.XX |Anaconda, Inc.| (default, ...)
 
-If you got something like this then *woot-woot*, Python 3.6.5 is installed on your machine. If Python 2.7 or later is installed then it's OK, you don't need to uninstall it, you just need to get Python3 running. Luckily this process is super easy with Ubuntu:
+If you got something like this then Python is installed on your machine. If Python 2.7 or later is installed then it's OK, you don't need to uninstall it, you just need to get Python3 running. Luckily this process is super easy with Ubuntu:
 
  - Step one: Open up the terminal by pressing `ctr + alt + t`
  - Step two: Type `sudo apt-get update`
- - Step three: Type `sudo apt-get install python3.6`
+ - Step three: Type `sudo apt-get install python3`
 
 The word sudo is abbreviation for "super user do" and it allows programs to be executed as a super user, aka the root user. The apt command means Advanced Package Tool, which is a package manager for Debian based operating systems like Ubuntu. The apt-get command is the APT package handling utility. You can see a list of the commands that's available for it by typing apt-get into the terminal.
 
@@ -52,7 +50,7 @@ Like Linux, Python is already installed on a variety of OS X systems. You can co
 
     python -V
 
-The command will output the version of Python which is:
+The command will output the version of Python, e.g.:
 
     Python 2.7.3
 
@@ -85,14 +83,13 @@ This tells you that Python is not installed and you have to set it up. Follow th
 
 If you don't know the location of python.exe then don't panic, just search for *python.exe* in the Windows menu. Once located, right click the file, select properties, and view the Location. Right click to copy the full path and then paste it at the end of the Path user variable. If you don't have a Path user variable then click the new button, add a variable named Path, and then add the value which is the location or "path" of the python.exe file. Once done type "python" into the terminal to ensure that everything was set up properly and that it runs.
 
-
 ### - *How to run your first Python program?*
 
 Once Python is installed we can test a simple *Hello World* program. Open up a text editor on your operating system (check Section 1.1 of this document). Open up a blank text file and add the following snippet:
 
     print("Hello World!")
 
-Go ahead and save the file as `HelloWorld.py` to a location of your choice. It can be anywhere, just don't forget where you put it... pinky swear? 👍The next step is to fire up the terminal or command prompt (if using Windows) and then change into the directory where `HelloWorld.py` is located. To change directories use the cd command. So, if `HelloWorld.py` is in a Programs folder on your Desktop in Ubuntu then it should look something like this:
+Go ahead and save the file as `HelloWorld.py` to a location of your choice. It can be anywhere, just don't forget where you put it.. The next step is to fire up the terminal or command prompt (if using Windows) and then change into the directory where `HelloWorld.py` is located. To change directories use the cd command. So, if `HelloWorld.py` is in a Programs folder on your Desktop in Ubuntu then it should look something like this:
 
     cd Desktop/Programs
 
@@ -144,6 +141,8 @@ That's it! Below are the steps on how you can install pip on OS X and various Li
 
     yum install python-pip
 
+### Pip
+
 Pip is a command line tool, so to install a package for example you just type a command into the terminal. One of the packages you will need in this course is [RDFLib](https://rdflib.readthedocs.io/en/stable/). Here's a quick rundown of some of the key functionality of pip, and how to install these two packages:
 
     $ pip install rdflib
@@ -187,14 +186,26 @@ JupyterLab will open automatically in your browser.
 
 GraphDB is a reasoning-enabled database for Linked Data and ontologies.
 
-### - *How to install the free edition of GraphDB?*
+There are two ways to install GraphBB on your machine: either by 1) downloading the software and installing it on your device, or 2) by downloading a Docker image and running the software from a container.
 
-* Open <https://ontotext.com/products/graphdb/graphdb-free/> in your browser
-* Fill in your information and provide a valid email address
-* In less than 5 minutes, you should receive an email from the GraphDB team with a link for download (there is a high probability that it will end up in your spam folder)
-* Choose the Operating System of your choice (Windows, Mac, deb based Linux, rpm based Linux)
-* Install GraphDB
+#### Docker Container
 
+Please follow these steps to run GraphDB from a container:
+
+1. Download the tar file with the build script [here](https://surfdrive.surf.nl/files/index.php/s/jtoL0nnuox3Jjpv).
+2. Extract the tar file in a new directory with `tar xf myTarFile.tar` or using a tool such as [7zip](https://www.7-zip.org/download.html).
+3. Generate the GraphDB image as described in the supplied README file.
+4. Start the container.
+
+#### Manual Installation
+
+Please follow these 5 simple steps to download and install GraphDB directly on your machine:
+
+1. Open <https://ontotext.com/products/graphdb/graphdb-free/> in your browser
+2. Fill in your information and provide a valid email address (e.g. your VU email address)
+3. In less than 5 minutes, you should receive an email from the GraphDB team with a link for download (it is very probable that this email will end up in your SPAM/JUNK folder)
+4. Choose the Operating System of your choice (Windows, Mac, deb based Linux, rpm based Linux)
+5. Install GraphDB
 
 ## 5. The Protégé Ontology Editor
 *(needed starting Week 4)*

@@ -2,7 +2,7 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ex: <http://example.com/kad2020/> .
+@prefix ex: <http://example.com/kad/> .
 
 ex:Netherlands a ex:Country .
 ex:Belgium a ex:Country .

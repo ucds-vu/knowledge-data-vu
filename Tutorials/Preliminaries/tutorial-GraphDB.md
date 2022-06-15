@@ -6,10 +6,22 @@ There are a number of available triple stores created by different companies and
 
 This document presents a short tutorial on how to install and work with GraphDB for the purpose of this course. For additional information, please check the [GraphDB documentation](http://graphdb.ontotext.com/documentation/free/quick-start-guide.html).
 
-
 ### - *How to install the free edition of GraphDB?*
 
-Please follow these 5 simple steps to download and install the free edition of GraphDB:
+There are two ways to install GraphBB on your machine: either by 1) downloading the software and installing it on your device, or 2) by downloading a Docker image and running the software from a container.
+
+#### Docker Container
+
+Please follow these steps to run GraphDB from a container:
+
+1. Download the tar file with the build script [here](https://surfdrive.surf.nl/files/index.php/s/jtoL0nnuox3Jjpv).
+2. Extract the tar file in a new directory with `tar xf myTarFile.tar` or using a tool such as [7zip](https://www.7-zip.org/download.html).
+3. Generate the GraphDB image as described in the supplied README file.
+4. Start the container.
+
+#### Manual Installation
+
+Please follow these 5 simple steps to download and install GraphDB directly on your machine:
 
 1. Open <https://ontotext.com/products/graphdb/graphdb-free/> in your browser
 2. Fill in your information and provide a valid email address (e.g. your VU email address)
@@ -17,7 +29,9 @@ Please follow these 5 simple steps to download and install the free edition of G
 4. Choose the Operating System of your choice (Windows, Mac, deb based Linux, rpm based Linux)
 5. Install GraphDB
 
+### - *How to access the GraphDB web interface* -
 
+Once started, the GraphDB web interface can be accessed by pointing your web browser to `127.0.0.1:7200`, which refers to the service (in our case GraphDB) which runs on port 7200 on your machine. Note that closing the tab or browser will not stop GraphDB from continue running in the background.
 
 ### - *How to create a local repository and load your own knowledge graph?*
 
@@ -29,17 +43,17 @@ After downloading and installing GraphDB, follow these steps to create your firs
   * Choose "Setup"
   * Choose "Repositories"
   * Choose "Create new repository"
-  * Give it a simple Repository ID (e.g. assignment-3)
-  * From the "Ruleset" options, choose the option "OWL-Max (Optimized)"
+  * Give it a simple Repository ID (e.g. *KnowledgeAndData*)
+  * From the "Ruleset" options, choose the option **OWL-Max (Optimized)**
   * Choose "Create".
 3. Now that your repository is created, you can see it on the top right of your window. It's time to import your knowledge graph into that repository:
   * Go to the menu bar on the left of the page
   * Choose "Import"
   * Choose "RDF" (then select the repository you want in case of several repositories)
-  * Choose "Upload RDF files" and you should be able to select the .ttl file that belongs to Assignment 3.
+  * Choose "Upload RDF files" and you should be able to select the .ttl file. Alternatively, you can directly copy-paste a small snippet by selecting the right option.
   * Select the file and choose "Import" (if another window appears, choose "Import" again)
   * If you go back to the main page (by clicking on the GraphDB logo on the top left), you will see that the number of total statements has increased, indicating that your knowledge graph has been successfully loaded into your repository.
-
+4. [Optional] Assign a suitable prefix to the namespaces in your graph (e.g. `ex` instead of `ns1`) by choosing "Setup" and then "Namespaces".
 
 ### - *How to query both your local repository and DBpedia from GraphDB?*
 
@@ -61,8 +75,6 @@ Try the following steps to query DBpedia from GraphDB:
       }
     } LIMIT 10
 ```
-
-
 You can save your queries in GraphDB by clicking on the icon named "Create saved query", which you can find inside the query editor on the top right.
 
 ### - *How to get the SPARQL endpoint of your GraphDB local repository?*
@@ -73,6 +85,6 @@ Similarly to the DBpedia knowledge Graph which you can query in Yasgui or Python
 2. Choose "Setup
 3. Choose "Repositories"
 4. Next to the name of your repository, you can find on the right a set of different icons. Choose the first one from the left, named "Copy repository URL to clipboard"
-5. You will find your local repository's SPARQL endpoint, which looks like this: http://145.108.229.246:7200/repositories/assignment-3
+5. You will find your local repository's SPARQL endpoint, which looks like this: http://127.0.0.1:7200/repositories/KnowledgeAndData
 
 Now adapt some of the queries you tested on the DBpedia SPARQL endpoint to execute them on your local repository, by simply replacing the DBpedia SPARQL endpoint with this URL you just copied.

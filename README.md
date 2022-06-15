@@ -13,4 +13,4 @@ In this course you will study formalisms that are useful and necessary to repres
 
 ### Support
 
-The course is taught by Victor de Boer (v.de.boer@vu.nl), Benno Kruit (b.b.kruit@vu.nl), and Xander Wilcke (w.x.wilcke@vu.nl). Please contact us if you have any questions regarding the course setup. For bugs found in this repository please create a new issue in this repository.   
+The course is taught by Victor de Boer, Benno Kruit, and Xander Wilcke. Please contact us if you have any questions regarding the course setup. For bugs found in this repository please create a new issue in this repository.

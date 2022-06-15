@@ -2,30 +2,25 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ex: <http://example.com/kad2020/> .
+@prefix ex: <http://example.com/kad/> .
 
 
-ex:Netherlands a ex:Country .
-ex:Belgium a ex:Country .
-ex:Netherlands ex:has_Name "The Netherlands" .
+ex:Netherlands rdf:type ex:Country .
+ex:Belgium rdf:type ex:Country .
+ex:Netherlands ex:hasName "The Netherlands" .
 ex:Netherlands ex:neighbours ex:Belgium .
-ex:Netherlands ex:has_Capital ex:Amsterdam .
-ex:Amsterdam a ex:Capital .
+ex:Netherlands ex:hasCapital ex:Amsterdam .
+ex:Amsterdam rdf:type ex:Capital .
 
-ex:Germany a ex:EuropeanCountry .
-
-# Here, we already have a bit of explicit knowledge. We will deal with this in more detail in Module 3, but use it already for Task 3 of Module 2.
+ex:Germany rdf:type ex:EuropeanCountry .
 
 ex:Capital rdfs:subClassOf ex:City .
 
 ex:EuropeanCountry rdfs:subClassOf ex:Country .
 
-# The remaining triples contain already some more complex explicit knowledge (RDFS). We will deal with this knowledge in Module 3.
-ex:containsCity 	rdfs:domain ex:Country;
-			rdfs:range ex:City.
+ex:containsCity rdfs:domain ex:Country ;
+                rdfs:range ex:City .
 
-ex:hasCapital	rdfs:subPropertyOf ex:containsCity;
-			rdfs:range ex:Capital .
-
-
+ex:hasCapital rdfs:subPropertyOf ex:containsCity ;
+              rdfs:range ex:Capital .
 
