@@ -1,5 +1,5 @@
-vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,
-A5,group,Assignment 5,Assignment 5 Integration and Visualization,A5,,,active,,,,,,,,,,
+vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,,,
+A5,group,Assignment 5,Assignment 5 Integration and Visualization,A5,,,active,,,,,,,,,,,,
 KDA5T1,outcome,Assignment 5 Task 1,Can integrate ontologies in Protégé,KDA5T1,average,,active,16,A5,20,Fully Correct,16,Mostly Correct,12,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA5T2,outcome,Assignment 5 Task 2,Can motivate the mapping used for integration well,KDA5T2,average,,active,8,A5,10,Fully Correct,8,Mostly Correct,6,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA5T3,outcome,Assignment 5 Task 3,Can perform integration on the fly using SPARQL queries,KDA5T3,average,,active,16,A5,20,Fully Correct,16,Mostly Correct,12,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding

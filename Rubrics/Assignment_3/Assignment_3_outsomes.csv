@@ -1,5 +1,5 @@
-vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,
-A3,group,Assignment 3,Assignment 3 Querying and Inferencing with SPARQL and RDFS,A3,,,active,,,,,,,,,,
+vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,,,
+A3,group,Assignment 3,Assignment 3 Querying and Inferencing with SPARQL and RDFS,A3,,,active,,,,,,,,,,,,
 KDA3T1a,outcome,Assignment 3 Task 1a,Can write a procedure to write a SPARQL query that returns all the cities in a local graph,KDA3T1a,average,,active,12,A3,15,Fully Correct,12,Mostly Correct,8,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA3T1b,outcome,Assignment 3 Task 1b,Can write a procedure to write a SPARQL query that returns related information from DBpedia,KDA3T1b,average,,active,12,A3,15,Fully Correct,12,Mostly Correct,8,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA3T1c,outcome,Assignment 3 Task 1c,Can write a procedure to write an RDF graph to disk,KDA3T1c,average,,active,4,A3,5,Fully Correct,4,Mostly Correct,3,Good Effort,2,Mostly Incorrect,1,Unfinished or No Indication of Understanding

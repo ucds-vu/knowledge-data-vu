@@ -1,5 +1,5 @@
-vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,
-A1,group,Assignment 1,Assignment 1 Propositional Logic and Data,A1,,,active,,,,,,,,,,
+vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,,,
+A1,group,Assignment 1,Assignment 1 Propositional Logic and Data,A1,,,active,,,,,,,,,,,,
 KDA1T1,outcome,Assignment 1 Task 1,Can write a procedure to transform formulae from infix to prefix notation,KDA1T1,average,,active,8,A1,10,Fully Correct,8,Mostly Correct,6,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA1T2,outcome,Assignment 1 Task 2,Can write a procedure to calculate the truth value of formulae,KDA1T2,average,,active,16,A1,20,Fully Correct,16,Mostly Correct,12,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA1T3,outcome,Assignment 1 Task 3,Can write a procedure to calculate a formulae is a tautology,KDA1T3,average,,active,8,A1,10,Fully Correct,8,Mostly Correct,6,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding

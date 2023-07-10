@@ -1,5 +1,5 @@
-vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,
-A4,group,Assignment 4,Assignment 4 Modelling with OWL,A4,,,active,,,,,,,,,,
+vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,workflow_state,mastery_points,parent_guids,ratings,,,,,,,,,
+A4,group,Assignment 4,Assignment 4 Modelling with OWL,A4,,,active,,,,,,,,,,,,
 KDA4T1,outcome,Assignment 4 Task 1,Can write a procedure to create an empty ontology with metadata,KDA4T1,average,,active,8,A4,10,Fully Correct,8,Mostly Correct,6,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA4T2a,outcome,Assignment 4 Task 2a,Can write a procedure to populate an ontology with classes and properties,KDA4T2a,average,,active,8,A4,10,Fully Correct,8,Mostly Correct,6,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
 KDA4T2b,outcome,Assignment 4 Task 2b,Can write a procedure to assert information using your ontology,KDA4T2b,average,,active,8,A4,10,Fully Correct,8,Mostly Correct,6,Good Effort,4,Mostly Incorrect,1,Unfinished or No Indication of Understanding
