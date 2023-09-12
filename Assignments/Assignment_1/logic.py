@@ -176,21 +176,21 @@ class Not(Proposition):
 #
 
 class And(Proposition):
-	symbol = ' ^ '
+	symbol = ' \u2227 '
 	empty_str = 'True'
 	def evaluate(self, **assignments):
 		return all( child.evaluate(**assignments) for child in self.children )
 #
 
 class Or(Proposition):
-	symbol = ' v '
+	symbol = ' \u2228 '
 	empty_str = 'False'
 	def evaluate(self, **assignments):
 		return any( child.evaluate(**assignments) for child in self.children )
 #
 
 class Implies(Proposition):
-	symbol = ' => '
+	symbol = ' \u2192 '
 	def __init__(self,child1,child2):
 		Proposition.__init__(self,child1,child2)
 	def evaluate(self, **assignments):
@@ -201,7 +201,7 @@ class Implies(Proposition):
 #
 
 class ImpliedBy(Proposition):
-	symbol = ' <= '
+	symbol = ' \u2190 '
 	def __init__(self,child1,child2):
 		Proposition.__init__(self,child1,child2)
 	def evaluate(self, **assignments):
@@ -212,7 +212,7 @@ class ImpliedBy(Proposition):
 #
 
 class Iff(Proposition):
-	symbol = ' <=> '
+	symbol = ' \u2194 '
 	def __init__(self,child1,child2):
 		Proposition.__init__(self,child1,child2)
 	def evaluate(self, **assignments):
