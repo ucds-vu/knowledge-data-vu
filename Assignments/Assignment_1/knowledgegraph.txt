@@ -1,3 +1,3 @@
 [['s','p','o'],['s','p1','o2'],['s2','p2','o']]
-[['Netherlands','name','"Netherlands"'],['Netherlands','has_capital','Amsterdam'],['Amsterdam','type','Capital']] 
-[['Netherlands','name','"Netherlands"'],['Netherlands','has_capital','Amsterdam'],['Amsterdam','type','Capital'],['Capital','type','City'],['Netherlands','neighbours','Belgium'],['Netherlands','type','Country']] 
+[['Netherlands','name','"The Netherlands"'],['Netherlands','has_capital','Amsterdam'],['Amsterdam','type','Capital'],['Amsterdam','has_population','"921.402"']] 
+[['Netherlands','name','"The Netherlands"'],['Netherlands','has_capital','Amsterdam'],['Amsterdam','type','Capital'],['Amsterdam','has_population','"921.402"'],['Capital','type','City'],['Netherlands','neighbours','Belgium'],['Netherlands','type','Country']] 
