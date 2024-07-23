@@ -192,7 +192,7 @@ There are two ways to install GraphBB on your machine: either by 1) downloading 
 
 Please follow these steps to run GraphDB from a container:
 
-1. Download the tar file with the build script [here](https://surfdrive.surf.nl/files/index.php/s/jtoL0nnuox3Jjpv).
+1. Download the tar file with the build script [here](https://surfdrive.surf.nl/files/index.php/s/V67UxKWqZCeS60V).
 2. Extract the tar file in a new directory with `tar xf myTarFile.tar` or using a tool such as [7zip](https://www.7-zip.org/download.html).
 3. Generate the GraphDB image as described in the supplied README file.
 4. Start the container.
