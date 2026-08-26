@@ -16,13 +16,13 @@ Please follow these steps to run GraphDB from a Docker container.
 
 2. Open a terminal (Linux/Mac) or powershell (Windows) and pull the latest version of [the GraphDB Docker image](https://hub.docker.com/r/ontotext/graphdb/) by executing the following command: 
 
-    docker pull ontotext/graphdb:<tag>
+    `docker pull ontotext/graphdb:<tag>`
 
 with `<tag>` the version of GraphDB that you want to work with. It is recommended to use the latest version.
 
 3. Start the GraphDB container by executing the following command:
 
-    docker run -p 127.0.0.1:7200:7200 --name graphdb -t ontotext/graphdb:<tag>
+    `docker run -p 127.0.0.1:7200:7200 --name graphdb -t ontotext/graphdb:<tag>`
 
 with `<tag>` the version you pulled in step 2. GraphDB is now running in the background as a service.
 
